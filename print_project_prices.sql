@@ -1,0 +1,5 @@
+SELECT PROJECT_ID, SUM(SALARY) AS PRICE
+FROM project_worker
+JOIN worker ON project_worker.WORKER_ID = worker.ID
+GROUP BY PROJECT_ID
+ORDER BY PRICE DESC;
